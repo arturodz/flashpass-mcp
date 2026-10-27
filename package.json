@@ -1,0 +1,26 @@
+{
+  "name": "flashpass-mcp",
+  "version": "1.0.0",
+  "description": "Unofficial MCP server for FlashPass (eAPIS manifests): persons, aircraft, manifest drafts",
+  "main": "server.ts",
+  "scripts": {
+    "start": "node server.ts",
+    "smoke": "node scripts/call.mjs",
+    "typecheck": "tsc --noEmit"
+  },
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "@modelcontextprotocol/server": "^2.4.0",
+    "node-html-parser": "^9.0.5",
+    "playwright-core": "^1.55.0",
+    "zod": "^4.6.7"
+  },
+  "engines": {
+    "node": ">=23.6"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "typescript": "^5.9.3"
+  }
+}
